@@ -24,7 +24,7 @@ constraint pk2 primary key (ID__album, ID_musician)
 create table if not exists track (
 ID SERIAL primary key,
 name VARCHAR(120) not null,
-duratin VARCHAR(8) not null,
+duratin integer not null,
 ID_album integer not null references album(ID)
 );
 create table if not exists collection (
@@ -34,6 +34,7 @@ year_release VARCHAR(12) not null
 );
 create table if not exists tracks_in_collection(
 ID serial primary key,
-ID__track INTEGER references album(ID),
+ID__track INTEGER references track(ID),
 ID_collection integer references collection(ID)
 );
+
