@@ -30,11 +30,10 @@ ID_album integer not null references album(ID)
 create table if not exists collection (
 ID SERIAL primary key,
 name VARCHAR(120) not null,
-year_release VARCHAR(12) not null
+year_release INTEGER not null
 );
 create table if not exists tracks_in_collection(
 ID serial primary key,
 ID__track INTEGER references track(ID),
-ID_collection integer references collection(ID)
+ID_collection INTEGER references collection(ID)
 );
-

@@ -15,7 +15,8 @@ values ('pop_track_1', 180, 1), ('pop_track_2', 280, 1), ('pop_track_3', 150, 1)
 ('jazz_track_1', 432, 3), ('jazz_track_2', 122, 3), ('jazz_track_3', 422, 3), 
 ('pop_track_4', 125, 4), ('pop_track_5', 340, 4), ('pop_track_6', 155, 4), 
 ('rock_track_4', 245, 5), ('rock_track_5', 245, 5), ('rock_track_6', 245, 5),
-('jazz_track_4', 432, 6), ('jazz_track_5', 145, 6), ('jazz_track_6', 322, 6)
+('jazz_track_4', 432, 6), ('jazz_track_5', 145, 6), ('jazz_track_6', 322, 6),
+('my_jazz_track_6', 123, 6)
 
 insert into collection(name, year_release) 
 values ('collection_1', 2021), ('collection_2', 2023), ('collection_3', 2019), 
